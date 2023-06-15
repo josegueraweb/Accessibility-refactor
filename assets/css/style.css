@@ -1,12 +1,19 @@
+
+/* The following CSS styles are applied to all HTML elements on the web page */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* The following CSS styles are applied to all HTML elements contained within the body HTML tag of the webpage */
+
 body {
     background-color: #d9dcd6;
 }
+
+/* The following CSS styles are applied to all elements contained within the header HTML tag of the webpage */
 
 header {
     padding: 20px;
@@ -41,19 +48,27 @@ header nav ul li {
     margin-left: 25px;
 }
 
+/* The following CSS styles are applied to all elements contained within the mark HTML tags of the webpage */
+
 mark {
     background-color: rgba(255, 255, 255, 0);
     opacity: 1;
 }
+
+/* The following CSS styles are applied to all elements contained within the anchor HTML tags of the webpage */
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* The following CSS styles are applied to all elements contained within the paragraph HTML tags of the webpage */
+
 p {
     font-size: 16px;
 }
+
+/* The following CSS styles are applied to all elements contained within the footer HTML tag of the webpage */
 
 footer {
     padding: 30px;
@@ -65,6 +80,15 @@ footer {
 footer h2 {
     font-size: 20px;
 }
+
+/* The following CSS styles are applied to all elements contained within the various classes of the webpage 
+    - when two or more CSS styles are present in a given .class structure, the last HTML element in the list receives the style.
+    
+    - In the following code snippet, 'child3' would receive the CSS style out of the group. 
+            
+        -- Parent, child1, child2, child3,
+    
+*/
 
 .hero {
     height: 800px;
