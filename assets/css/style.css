@@ -1,231 +1,237 @@
-
-/* The following CSS styles are applied to all HTML elements on the web page */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* { /* Selects all HTML elements on the webpage. */
+    box-sizing: border-box; /* Gives all elements on the webpage the ability to enforce a maximum width and height to their box sizing. The element's interior box properties will be reflect any changes to the element's dimension properties (i.e. border, padding). */
+    padding: 0; /* Sets the space around an element’s content to 0px. */
+    margin: 0; /* Sets the space around an element’s border to 0px. */
 }
 
-/* The following CSS styles are applied to all HTML elements contained within the body HTML tag of the webpage */
 
-body {
-    background-color: #d9dcd6;
+body { /* Selects all HTML elements on the webpage. */
+    background-color: #d9dcd6; /* Sets the color of the container. */
 }
 
-/* The following CSS styles are applied to all elements contained within the header HTML tag of the webpage */
 
-header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+header { /* Selects all elements within the <header></header> tag tags. */
+    padding: 20px; /* Sets the space around an element’s content to 20px. */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets "Trebuchet MS" as the primary font for this section. If Trebuchet MS isn't avilable, then the browser will attempt to render the other fonts listed until one is available. */
     background-color: #2a607c;
-    color: #ffffff;
+    color: #ffffff; /* Sets color of all text within the section. */
 }
 
-header h1 {
-    display: inline-block;
-    font-size: 48px;
+
+header h1 { /* Selects all the <h1></h1> elements within the <header></header> tag. */
+    display: inline-block; /* Sets the display property for an element to inline-block. The element will be able to stack horizontally with other inline elements on the same line while also being able to change sizing and scaling options like that of block elements (i.e. manipulate width, height, and spacing) */
+    font-size: 48px; /* Sets the font size of all text within the section. */
 }
 
-header h1 .seo {
-    color: #d9dcd6;
-}
 
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/* The following CSS styles are applied to all elements contained within the mark HTML tags of the webpage */
-
-mark {
-    background-color: rgba(255, 255, 255, 0);
+header h1 .seo { /* Selects all <h1></h1> elements with the ".seo" class within the <header></header> tag. */
+    color: #ffffff; /* Sets color of all text within the section. */
+    background-color: #2a607c;
     opacity: 1;
 }
 
-/* The following CSS styles are applied to all elements contained within the anchor HTML tags of the webpage */
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+header nav { /* Selects all <nav></nav> elements within the <header></header> tag. */
+    padding-top: 15px; /* Sets the space above an element’s content to 15px. */
+    margin-right: 20px; /* Increases the space to the right of an element’s border by 20px. */
+    float: right; /* Sets the position of the element to as far right as its parent element will allow. Any elements following the floated element will get pushed to a new line.
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets "Gill Sans" as the primary font for this section. If "Gill Sans" isn't avilable, then the browser will attempt to render the other fonts listed until one is available. */
+    font-size: 20px; /* Sets the font size of all text within the section. */
 }
 
-/* The following CSS styles are applied to all elements contained within the paragraph HTML tags of the webpage */
 
-p {
-    font-size: 16px;
+header nav ul { /* Selects all <ul></ul> elements in the <nav></nav> element within the <header></header> tag. */
+    list-style-type: none; /* Removes the default styling for the <ul></ul> elements */
 }
 
-/* The following CSS styles are applied to all elements contained within the footer HTML tag of the webpage */
 
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+header nav ul li { /* Selects all <li></li> elements from the <ul></ul> element in the <nav></nav> element that is within the <header></header> tag. */
+    display: inline-block; /* Sets the display property for an element to inline-block. The element will be able to stack horizontally with other inline elements on the same line while also being able to change sizing and scaling options like that of block elements (i.e. manipulate width, height, and spacing) */
+    margin-left: 25px; /* Sets the space to the left of an element’s border to 25px. */
 }
+
+a { /* Selects all <a></a> elements in the HTML document. */
+    color: #ffffff; /* Sets color of all text within the section. */
+    text-decoration: none; /* Removes the default styling for the <a></a> elements */
+}
+
+
+p { /* Selects all <p></p> elements in the HTML document. */
+    font-size: 16px; /* Sets the font size of all text within the section. */
+}
+
+
+footer { /* Selects the <footer></footer> element in the HTML document. */
+    padding: 30px; /* Sets the space around an element’s content to 30px. */
+    clear: both; /* Removes an element from the flow of surrounding floated elements. */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets "Trebuchet MS" as the primary font for this section. If Trebuchet MS isn't avilable, then the browser will attempt to render the other fonts listed until one is available. */
+    text-align: center; /* Centers the text horizontally within its parent container */
+}
+
 
 footer h2 {
-    font-size: 20px;
+    font-size: 20px; /* Sets the font size of all text within the section. */
 }
 
-/* The following CSS styles are applied to all elements contained within the various classes of the webpage 
-    - when two or more CSS styles are present in a given .class structure, the last HTML element in the list receives the style.
-    
-    - In the following code snippet, 'child3' would receive the CSS style out of the group. 
-            
-        -- Parent, child1, child2, child3,
-    
-*/
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+.hero { /* Selects all elements that have been assigned the "hero" class. */
+    height: 800px; /* Sets the height of the container to 800px */
+    width: 100%; /* Sets the width to take up 100% of its parent container */
+    margin-bottom: 25px; /* Sets the space at the bottom of an element’s border to 25px. */
+    background-image: url("../images/digital-marketing-meeting.jpg"); /* Imports a image and sets it as the background for the container */
+    background-size: cover; /* Sets the background image to fill the entire space of the container */ 
+    background-position: center; /* Centers a background image horizontally and vertically within its parent container */
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
+
+.float-left { /* Selects all elements that have been assigned the "float-left" class. */
+    float: left; /* Sets the position of the element to as far left as its parent element will allow. Any elements following the floated element will get pushed to a new line. */
+    margin-right: 25px; /* Sets the space to the right of an element’s border to 25px. */
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
+
+.float-right { /* Selects all elements that have been assigned the "float-right" class. */
+    float: right; /* Sets the position of the element to as far right as its parent element will allow. Any elements following the floated element will get pushed to a new line. */
+    margin-left: 25px; /* Sets the space to the left of an element’s border to 25px. */
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+
+.content { /* Selects all elements that have been assigned the "content" class. */
+    width: 75%; /* Sets the width to take up 75% of its parent container */
+    display: inline-block; /* Sets the display property for an element to inline-block. The element will be able to stack horizontally with other inline elements on the same line while also being able to change sizing and scaling options like that of block elements (i.e. manipulate width, height, and spacing) */
+    margin-left: 20px; /* Sets the space to the left of an element’s border to 20px. */
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+
+.benefits { /* Selects all elements that have been assigned the "benefits" class. */
+    margin-right: 20px; /* Sets the space to the right of an element’s border to 25px. */
+    padding: 20px; /* Sets the space around an element’s content to 20px. */
+    clear: both; /* Removes an element from the flow of surrounding floated elements. */
+    float: right; /* Sets the position of the element to as far right as its parent element will allow. Any elements following the floated element will get pushed to a new line. */
+    width: 20%; /* Sets the width to take up 20% of its parent container */
+    height: 100%; /* Sets the height to take up 100% of its parent container */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets "Gill Sans" as the primary font for this section. If Gill Sans isn't avilable, then the browser will attempt to render the other fonts listed until one is available. */
+    background-color: #2589bd; /* Sets the color of the container. */
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
+
+.benefit-lead { /* Selects all elements that have been assigned the "benefit-lead" class. */
+    margin-bottom: 32px; /* Sets the space at the bottom of an element’s border to 32px. */
+    color: #ffffff; /* Sets color of all text within the section. */
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
+
+.benefit-brand { /* Selects all elements that have been assigned the "benefit-brand" class. */
+    margin-bottom: 32px; /* Sets the space at the bottom of an element’s border to 32px. */
+    color: #ffffff; /* Sets color of all text within the section. */
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
+
+.benefit-cost { /* Selects all elements that have been assigned the "benefit-cost" class. */
+    margin-bottom: 32px; /* Sets the space at the bottom of an element’s border to 32px. */
+    color: #ffffff; /* Sets color of all text within the section. */
 }
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
+
+.benefit-lead h3 { /* Selects all <h3></h3> elements that have been assigned the "benefit-lead" class. */
+    margin-bottom: 10px; /* Sets the space at the bottom of an element’s border to 10px. */
+    text-align: center; /* Centers the text horizontally within its parent container */
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
+
+.benefit-brand h3 { /* Selects all <h3></h3> elements that have been assigned the "benefit-brand" class. */
+    margin-bottom: 10px; /* Sets the space at the bottom of an element’s border to 10px. */
+    text-align: center; /* Centers the text horizontally within its parent container */
 }
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
+
+.benefit-cost h3 { /* Selects all <h3></h3> elements that have been assigned the "benefit-cost" class. */
+    margin-bottom: 10px; /* Sets the space at the bottom of an element’s border to 10px. */
+    text-align: center; /* Centers the text horizontally within its parent container */
 }
 
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+
+.benefit-lead img { /* Selects all <img> elements that have been assigned the "benefit-lead" class. */
+    display: block; /* Sets the display property for an element to block, which allows for the element to take up a line-level space on its own (i.e. the element will occupy a line on the page on its own ... other elements will render underneath it). */
+    margin: 10px auto; /* Sets an element's top and bottom spacing starting from its border at 10px. The auto then centers the elements position horizontally within its parent container. */
+    max-width: 150px; /* Ensures that the element's width does not exceed 150px. */
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+
+.benefit-brand img { /* Selects all <img> elements that have been assigned the "benefit-brand" class. */
+    display: block; /* Sets the display property for an element to block, which allows for the element to take up a line-level space on its own (i.e. the element will occupy a line on the page on its own ... other elements will render underneath it). */
+    margin: 10px auto; /* Sets an element's top and bottom spacing starting from its border at 10px. The auto then centers the elements position horizontally within its parent container. */
+    max-width: 150px; /* Ensures that the element's width does not exceed 150px. */
 }
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+
+.benefit-cost img { /* Selects all <img> elements that have been assigned the "benefit-cost" class. */
+    display: block; /* Sets the display property for an element to block, which allows for the element to take up a line-level space on its own (i.e. the element will occupy a line on the page on its own ... other elements will render underneath it). */
+    margin: 10px auto; /* Sets an element's top and bottom spacing starting from its border at 10px. The auto then centers the elements position horizontally within its parent container. */
+    max-width: 150px; /* Ensures that the element's width does not exceed 150px. */
 }
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+
+.search-engine-optimization { /* Selects all elements that have been assigned the "search-engine-optimization" class. */ 
+    margin-bottom: 20px; /* Sets the space at the bottom of an element’s border to 20px. */
+    padding: 50px; /* Sets the space around an element’s content to 50px. */
+    height: 300px; /* Sets the height to take up 100% of its parent container */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets "Gill Sans" as the primary font for this section. If Gill Sans isn't avilable, then the browser will attempt to render the other fonts listed until one is available. */
+    background-color: #0072bb; /* Sets the color of the container. */
+    color: #ffffff; /* Sets color of all text within the section. */
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+
+.online-reputation-management { /* Selects all elements that have been assigned the "online-reputation-management" class. */
+    margin-bottom: 20px; /* Sets the space at the bottom of an element’s border to 20px. */
+    padding: 50px; /* Sets the space around an element’s content to 50px. */
+    height: 300px; /* Sets the height to take up 100% of its parent container */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets "Gill Sans" as the primary font for this section. If Gill Sans isn't avilable, then the browser will attempt to render the other fonts listed until one is available. */
+    background-color: #0072bb; /* Sets the color of the container. */
+    color: #ffffff; /* Sets color of all text within the section. */
 }
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+
+.social-media-marketing { /* Selects all elements that have been assigned the "social-media-marketing" class. */
+    margin-bottom: 20px; /* Sets the space at the bottom of an element’s border to 20px. */
+    padding: 50px; /* Sets the space around an element’s content to 50px. */
+    height: 300px; /* Sets the height to take up 100% of its parent container */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets "Gill Sans" as the primary font for this section. If Gill Sans isn't avilable, then the browser will attempt to render the other fonts listed until one is available. */
+    background-color: #0072bb; /* Sets the color of the container. */
+    color: #ffffff; /* Sets color of all text within the section. */
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
+
+.search-engine-optimization img { /* Selects all <img> elements that have been assigned the "search-engine-optimizatoin" class. */
+    max-height: 200px; /* Ensures that the element's height does not exceed 200px. */
 }
 
-.online-reputation-management img {
-    max-height: 200px;
+
+.online-reputation-management img { /* Selects all <img> elements that have been assigned the "online-reputation-management" class. */
+    max-height: 200px; /* Ensures that the element's height does not exceed 200px. */
 }
 
-.social-media-marketing img {
-    max-height: 200px;
+
+.social-media-marketing img { /* Selects all <img> elements that have been assigned the "social-media-marketing" class. */
+    max-height: 200px; /* Ensures that the element's height does not exceed 200px. */
 }
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+
+.search-engine-optimization h2 { /* Selects all <h2></h2> elements that have been assigned the "search-engine-optimization" class. */ 
+    margin-bottom: 20px; /* Sets the space at the bottom of an element’s border to 20px. */
+    font-size: 36px; /* Sets the font size of all text within the section. */
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+
+.online-reputation-management h2 { /* Selects all <h2></h2> elements that have been assigned the "online-reputation-management" class. */ 
+    margin-bottom: 20px; /* Sets the space at the bottom of an element’s border to 20px. */
+    font-size: 36px; /* Sets the font size of all text within the section. */
 }
 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+
+.social-media-marketing h2 { /* Selects all <h2></h2> elements that have been assigned the "social-media-marketing" class. */ 
+    margin-bottom: 20px; /* Sets the space at the bottom of an element’s border to 20px. */
+    font-size: 36px; /* Sets the font size of all text within the section. */
 }
 
 
