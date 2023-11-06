@@ -1,4 +1,4 @@
-# **Accessibility-refactor**
+# **Semantic Code Refactor**
  
 ## **Project Description**
 
